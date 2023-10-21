@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js can change images</h1>
+    <img id="myImage" onclick="changeImage()" src="211826.gif" alt="">
+    <p>click the image</p>
+    <script>
+        function changeImage() {
+        var img = document.getElementById("myImage");
+        if (img.src.match("211826.gif")) {
+            img.src = "sukunade.gif";
+        } 
+        else {
+            img.src = "211826.gif";
+        }
+        }
+    </script>
+</body>
+</html>
